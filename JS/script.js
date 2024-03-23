@@ -9,18 +9,21 @@ document.getElementById("ClearOutput").onclick = function () {
 }
 
 
-// Alert Name
-document.getElementById("AlertName").onclick = function () {
-    alert("Muhammad Uzair Shahbaz")
-    statement = "alert(Muhammad Uzair Shahbaz)"
-    document.getElementById("Input").innerHTML = statement;
+// concatenate
+document.getElementById("concatenate").onclick = function () {
+    let first =prompt("Enter Ist String")
+    let second =prompt("Enter 2nd String")
+    let concatenation = first +  second
+    document.getElementById("Input").innerHTML = "let first = "+ first +" </br> let second = "+ second +" </br>  concatenation = " + first +  " + " + second;
+    document.getElementById("Output").innerHTML = concatenation;
 }
 
-// Alert Number
-document.getElementById("AlertNumber").onclick = function () {
-    alert(2003)
-    statement = "alert(2003)"
-    document.getElementById("Input").innerHTML = statement;
+// name
+document.getElementById("name").onclick = function () {
+    let Name =prompt("Enter Your Good Name")
+    document.getElementById("Input").innerHTML = "let Name = "+ Name +
+    document.getElementById("Output").innerHTML =  Name
+    
 }
 // Variable Name
 document.getElementById("VariableName").onclick = function () {
